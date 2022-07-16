@@ -1,0 +1,63 @@
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-area: main;
+    .carrusel {
+        grid-column: 1/4;
+    }
+    .procesadores {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .botones {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        grid-column: 2/3;
+        .boton1 {
+            input {
+                @extend .boton;
+            }
+        }
+        .boton2 {
+            input {
+                @extend .boton;
+            }
+        }
+    }
+    .carrusel2 {
+        grid-column: 1/4;
+    }
+    .ayudacont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color:$primario;
+        grid-column: 1/4;
+        color: $secundario;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .main {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        .acordion {
+            display: flex;
+        }
+        .procesadores {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            img {
+                height: 90px;
+            }
+        }
+        
+    }
+}
+

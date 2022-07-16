@@ -1,0 +1,135 @@
+.aside {
+    background-color: $primario;
+    grid-area: aside;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+    .img1 {
+        @include flex-center-center;
+        img {
+            height: 20rem;
+        }
+    }
+    .img2 {
+        @include flex-center-center;
+        img {
+            height: 20rem;
+        }
+    }
+    .img3 {
+        @include flex-center-center;
+        img {
+            height: 20rem;
+        }
+    }
+    .pcs {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-left: 500px;
+        img {
+            height: 200px;
+            padding: 20px;
+        }
+    }
+    .pcs2 {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-left: 500px;
+        img {
+            height: 200px;
+            padding: 20px;
+        }
+    }
+    .acordion2 {
+        margin: 20px;
+    }
+    .ofertas2 {
+        margin: 10px;
+        .ofer1 {
+            margin: 10px;
+
+        }
+    }
+    .preguntas {
+        grid-column: 1/4;
+        justify-content: center;
+        justify-content: center;
+        
+        ul{
+            margin-top: 30px;
+            li {
+                color: $secundario;
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .aside {
+        background-color: $primario;
+        grid-area: aside;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .img1 {
+            @include flex-center-center;
+            img {
+                height: 10rem;
+            }
+        }
+        .img2 {
+            @include flex-center-center;
+            img {
+                height: 10rem;
+            }
+        }
+        .img3 {
+            @include flex-center-center;
+            img {
+                display: none;
+            }
+        }
+        .pcs {
+            padding-left: 50%;
+            .pcs1{
+                
+            }
+            .pcs2 {
+                display: none;
+            }
+        }
+        .ofertas2 {
+            margin: 10px;
+            .ofer1 {
+                img {
+                    margin: 10px;
+                }   
+            }
+            .ofer2 {
+                img {
+                    margin: 10px;
+                }   
+            }
+        }
+        .preguntas {
+            grid-column: 1/4;
+            justify-content: center;
+            justify-content: center;
+            
+            ul{
+                margin-top: 10px;
+                li {
+                    color: $secundario;
+                    font-size: 15px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+    }
+    
+}

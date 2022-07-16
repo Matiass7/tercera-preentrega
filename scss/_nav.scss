@@ -1,0 +1,38 @@
+
+.nav {
+    background-color: $secundario;
+    grid-area: nav;
+    @include flex-center-center-center;
+    li {
+        display: inline;
+        padding: 20px;
+        font-size: $fuentePrimaria;
+        & :hover {
+            transition: 1s;
+            font-size: $fuenteSecundaria;
+        }
+        a {
+            color: $primario;
+        }
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .nav {
+        background-color: $secundario;
+        grid-area: nav;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        li {
+            display: inline;
+            padding: 10px;
+            font-size: $fuentePrimaria;
+            a {
+                color: $primario;
+            }
+        }
+    }
+}

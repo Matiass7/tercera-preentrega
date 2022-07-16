@@ -1,0 +1,49 @@
+// colores
+$primario: #5c16c5;
+$base: #37373f;
+$secundario:#F0F6FE;
+
+//fuentes
+$fuentePrimaria: 20px;
+$fuenteSecundaria: 40px;
+
+
+// mixin
+@mixin flex-start-center {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+};
+
+@mixin user {
+    font-size: 50px;
+    color: #5c16c5;
+}
+
+@mixin flex-center-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin flex-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin h2 {
+    color: #5c16c5;
+    font-size: 30px;
+}
+
+.boton {
+    height: 70px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: #37373f;
+    color: #5c16c5;
+    font-size: 20px;
+}
+
